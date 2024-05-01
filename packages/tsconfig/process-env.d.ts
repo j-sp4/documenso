@@ -1,7 +1,6 @@
 declare namespace NodeJS {
   export interface ProcessEnv {
     NEXT_PUBLIC_WEBAPP_URL?: string;
-    NEXT_PUBLIC_MARKETING_URL?: string;
 
     NEXT_PRIVATE_GOOGLE_CLIENT_ID?: string;
     NEXT_PRIVATE_GOOGLE_CLIENT_SECRET?: string;
@@ -71,7 +70,7 @@ declare namespace NodeJS {
     VERCEL_ENV?: 'production' | 'development' | 'preview';
     VERCEL_URL?: string;
 
-    DEPLOYMENT_TARGET?: 'webapp' | 'marketing';
+    DEPLOYMENT_TARGET?: 'webapp';
     FONT_CAVEAT_URI: string;
 
     POSTGRES_URL?: string;

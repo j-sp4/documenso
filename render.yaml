@@ -41,8 +41,6 @@ services:
           name: documenso-app
           type: web
           envVarKey: RENDER_EXTERNAL_URL
-      - key: NEXT_PUBLIC_MARKETING_URL
-        value: 'http://localhost:3001'
 
       # SMTP
       - key: NEXT_PRIVATE_SMTP_TRANSPORT
@@ -74,12 +72,6 @@ services:
       - key: NEXT_PUBLIC_POSTHOG_KEY
         sync: false
       - key: NEXT_PUBLIC_FEATURE_BILLING_ENABLED
-        sync: false
-
-      # Redis (Only required for marketing site, but added for completeness)
-      - key: NEXT_PRIVATE_REDIS_URL
-        sync: false
-      - key: NEXT_PRIVATE_REDIS_TOKEN
         sync: false
 
       # Storage
