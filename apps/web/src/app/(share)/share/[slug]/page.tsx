@@ -1,8 +1,5 @@
 import type { Metadata } from 'next';
 import { headers } from 'next/headers';
-import { redirect } from 'next/navigation';
-
-import { NEXT_PUBLIC_MARKETING_URL } from '@documenso/lib/constants/app';
 
 type SharePageProps = {
   params: { slug: string };
@@ -34,6 +31,4 @@ export default function SharePage() {
   if (/bot|facebookexternalhit|WhatsApp|google|bing|duckduckbot|MetaInspector/i.test(userAgent)) {
     return null;
   }
-
-  redirect(NEXT_PUBLIC_MARKETING_URL() ?? 'http://localhost:3001');
 }
